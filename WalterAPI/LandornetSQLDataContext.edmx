@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="LandornetSQLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Employees">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="StaffNumber" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="FirstNamePreferred" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastNamePreferred" Type="nvarchar" MaxLength="50" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="OfficeID" Type="varchar" MaxLength="20" />
+          <Property Name="Title" Type="varchar" MaxLength="120" />
+          <Property Name="Password" Type="varchar" MaxLength="20" />
+          <Property Name="DepartmentID" Type="varchar" MaxLength="15" />
+          <Property Name="WorkPhone" Type="varchar" MaxLength="80" />
+          <Property Name="ActiveStatus" Type="varchar" MaxLength="20" />
+          <Property Name="EmployeeType" Type="varchar" MaxLength="20" />
+          <Property Name="FinancialResponsibility" Type="varchar" MaxLength="20" />
+          <Property Name="BirthDate" Type="datetime" />
+          <Property Name="TitleCode" Type="varchar" MaxLength="25" />
+          <Property Name="LastHireDate" Type="datetime" />
+          <Property Name="RecID" Type="varchar" MaxLength="10" />
+          <Property Name="PhotoExists" Type="varchar" MaxLength="10" />
+          <Property Name="CellPhone" Type="varchar" MaxLength="80" />
+          <Property Name="Address1" Type="varchar" MaxLength="300" />
+          <Property Name="Address2" Type="varchar" MaxLength="100" />
+          <Property Name="City" Type="varchar" MaxLength="100" />
+          <Property Name="State" Type="varchar" MaxLength="50" />
+          <Property Name="Zip" Type="varchar" MaxLength="30" />
+          <Property Name="Country" Type="varchar" MaxLength="50" />
+          <Property Name="HomePhone" Type="varchar" MaxLength="80" />
+          <Property Name="EmergencyName" Type="varchar" MaxLength="100" />
+          <Property Name="EmergencyPhone" Type="varchar" MaxLength="80" />
+          <Property Name="YRStaffNumber" Type="varchar" MaxLength="20" />
+          <Property Name="StaffNumberSupervisor" Type="varchar" MaxLength="20" />
+          <Property Name="CountHRIS" Type="smallint" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="EmailHost" Type="varchar" MaxLength="20" />
+          <Property Name="Division" Type="varchar" MaxLength="10" />
+          <Property Name="StaffNumberSupervisor2" Type="varchar" MaxLength="20" />
+          <Property Name="IsKnowledgeLeader" Type="bit" Nullable="false" />
+          <Property Name="IsWiseAss" Type="bit" Nullable="false" />
+          <Property Name="UserNameTemp" Type="varchar" MaxLength="30" />
+          <Property Name="HomeFax" Type="varchar" MaxLength="80" />
+          <Property Name="ShowHomePhone" Type="bit" />
+          <Property Name="ShowHomeFax" Type="bit" />
+          <Property Name="ShowCellPhone" Type="bit" />
+          <Property Name="Address3" Type="varchar" MaxLength="100" />
+          <Property Name="EmergencyRelationship" Type="varchar" MaxLength="80" />
+          <Property Name="SSNumber" Type="varchar" MaxLength="30" />
+          <Property Name="FullNameCalc" Type="nvarchar" MaxLength="101" StoreGeneratedPattern="Computed" />
+          <Property Name="JobClassID" Type="varchar" MaxLength="20" />
+          <Property Name="IsKnowledgeFacilitator" Type="bit" Nullable="false" />
+          <Property Name="SearchName" Type="varchar" MaxLength="200" />
+          <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SearchText" Type="text" />
+          <Property Name="FirstNamePreferredUnicode" Type="nvarchar" MaxLength="60" />
+          <Property Name="LastNamePreferredUnicode" Type="nvarchar" MaxLength="60" />
+          <Property Name="SearchFactor" Type="tinyint" Nullable="false" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="60" />
+          <Property Name="MiddleNamePreferred" Type="nvarchar" MaxLength="60" />
+          <Property Name="MiddleNamePreferredUnicode" Type="nvarchar" MaxLength="60" />
+          <Property Name="EmergencyName2" Type="varchar" MaxLength="100" />
+          <Property Name="EmergencyRelationship2" Type="varchar" MaxLength="100" />
+          <Property Name="EmergencyPhone2" Type="varchar" MaxLength="100" />
+          <Property Name="EmailHome" Type="varchar" MaxLength="100" />
+          <Property Name="ShowEmailHome" Type="bit" />
+          <Property Name="ShowBirthday" Type="bit" />
+          <Property Name="EmployeeTimestamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="LastSeparationDate" Type="datetime" />
+          <Property Name="IsOnLeave" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="BirthdateDummyYear" Type="datetime" />
+          <Property Name="OfficeIDAdditional" Type="varchar" MaxLength="20" />
+          <Property Name="ExternalTitle" Type="varchar" MaxLength="120" />
+          <Property Name="ShowCellPhoneBusinessCard" Type="bit" />
+          <Property Name="OfficeID2" Type="varchar" MaxLength="20" />
+          <Property Name="ManagerLastRemindedAnniversary" Type="datetime" />
+          <Property Name="EmployeeSentEmbark2MonthReminder" Type="bit" Nullable="false" />
+          <Property Name="ShowAsNewEmployee" Type="bit" Nullable="false" />
+          <Property Name="LastHireDateOverride" Type="datetime" />
+          <Property Name="HoursPerWeek" Type="real" />
+          <Property Name="TempEntitlement" Type="tinyint" />
+          <Property Name="Department" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Offices">
+          <Key>
+            <PropertyRef Name="OfficeID" />
+          </Key>
+          <Property Name="OfficeID" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Office" Type="varchar" MaxLength="50" />
+          <Property Name="ParentOfficeID" Type="varchar" MaxLength="20" />
+          <Property Name="Region" Type="varchar" MaxLength="20" />
+          <Property Name="OfficeCode" Type="varchar" MaxLength="10" />
+          <Property Name="CompanyName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address1" Type="varchar" MaxLength="100" />
+          <Property Name="Address2" Type="varchar" MaxLength="100" />
+          <Property Name="Address3" Type="varchar" MaxLength="100" />
+          <Property Name="Address4" Type="varchar" MaxLength="100" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="State" Type="varchar" MaxLength="50" />
+          <Property Name="Zip" Type="varchar" MaxLength="20" />
+          <Property Name="Country" Type="varchar" MaxLength="50" />
+          <Property Name="MainPhone" Type="varchar" MaxLength="50" />
+          <Property Name="MainFax" Type="varchar" MaxLength="50" />
+          <Property Name="OfficeNotes" Type="varchar" MaxLength="1000" />
+          <Property Name="WeatherURL" Type="varchar" MaxLength="200" />
+          <Property Name="ActiveFlag" Type="bit" Nullable="false" />
+          <Property Name="EmailHost" Type="varchar" MaxLength="20" />
+          <Property Name="LocationID" Type="varchar" MaxLength="12" />
+          <Property Name="LocationIDWindows" Type="varchar" MaxLength="50" />
+          <Property Name="StandardBias" Type="smallint" />
+          <Property Name="CurrencyID" Type="smallint" />
+          <Property Name="FinancialResponsibilityFlag" Type="bit" Nullable="false" />
+          <Property Name="IsPhysical" Type="bit" Nullable="false" />
+          <Property Name="FTEHours" Type="real" />
+          <Property Name="CCEnabled" Type="bit" />
+          <Property Name="EmployeeCount" Type="smallint" Nullable="false" />
+          <Property Name="OfficeNameShort" Type="varchar" MaxLength="20" />
+          <Property Name="CountryID" Type="smallint" />
+          <Property Name="Domain" Type="varchar" MaxLength="20" />
+          <Property Name="DomainEmail" Type="bit" Nullable="false" />
+          <Property Name="DomainFileServers" Type="bit" Nullable="false" />
+          <Property Name="LanguageIDDefault" Type="varchar" MaxLength="10" />
+          <Property Name="IsOracle" Type="bit" Nullable="false" />
+          <Property Name="CategoryID" Type="int" />
+          <Property Name="MapURLOverride" Type="varchar" MaxLength="300" />
+          <Property Name="IsArchived" Type="bit" Nullable="false" />
+          <Property Name="EmailAddressAll" Type="varchar" MaxLength="50" />
+          <Property Name="UseNewMeetingRooms" Type="bit" Nullable="false" />
+          <Property Name="Latitude" Type="real" />
+          <Property Name="Longitude" Type="real" />
+          <Property Name="MeetingRoomStartHour" Type="tinyint" />
+          <Property Name="MicrositeURL" Type="varchar" MaxLength="100" />
+          <Property Name="MapURL" Type="varchar" MaxLength="300" />
+          <Property Name="MapURLMobile" Type="varchar" MaxLength="300" />
+          <Property Name="HRISUpdateEmail" Type="varchar" MaxLength="100" />
+          <Property Name="PIFNewCompanyEmail" Type="varchar" MaxLength="50" />
+          <Property Name="UseOfficeMailingList" Type="bit" Nullable="false" />
+          <Property Name="IsNotes" Type="bit" Nullable="false" />
+          <Property Name="WebmailURL" Type="varchar" MaxLength="300" />
+          <Property Name="UsePasswordForm" Type="bit" Nullable="false" />
+          <Property Name="SortOrderCC" Type="tinyint" />
+          <Property Name="MeetingRoomsFoodJobNumberRequired" Type="bit" Nullable="false" />
+          <Property Name="WPPRegion" Type="varchar" MaxLength="50" />
+          <Property Name="CoffeeLastBrewed" Type="datetime" />
+          <Property Name="CoffeeStatus" Type="tinyint" />
+          <Property Name="CoffeeLastBrewedByPerson" Type="int" />
+          <Property Name="CartesisCode" Type="varchar" MaxLength="50" />
+          <Property Name="LandorComURL" Type="varchar" MaxLength="255" />
+          <Property Name="WorkingHoursInDay" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="DefaultEntitlementDays" Type="tinyint" />
+        </EntityType>
+        <EntityContainer Name="LandornetSQLModelStoreContainer">
+          <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Offices" EntityType="Self.Offices" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LandornetSQLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="StaffNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FirstNamePreferred" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastNamePreferred" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OfficeID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DepartmentID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="WorkPhone" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ActiveStatus" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="EmployeeType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="FinancialResponsibility" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BirthDate" Type="DateTime" Precision="3" />
+          <Property Name="TitleCode" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="LastHireDate" Type="DateTime" Precision="3" />
+          <Property Name="RecID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="PhotoExists" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CellPhone" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="Address1" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Address2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Zip" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HomePhone" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="EmergencyName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EmergencyPhone" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="YRStaffNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="StaffNumberSupervisor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CountHRIS" Type="Int16" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EmailHost" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Division" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="StaffNumberSupervisor2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IsKnowledgeLeader" Type="Boolean" Nullable="false" />
+          <Property Name="IsWiseAss" Type="Boolean" Nullable="false" />
+          <Property Name="UserNameTemp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="HomeFax" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ShowHomePhone" Type="Boolean" />
+          <Property Name="ShowHomeFax" Type="Boolean" />
+          <Property Name="ShowCellPhone" Type="Boolean" />
+          <Property Name="Address3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EmergencyRelationship" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="SSNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="FullNameCalc" Type="String" MaxLength="101" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="JobClassID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IsKnowledgeFacilitator" Type="Boolean" Nullable="false" />
+          <Property Name="SearchName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SearchText" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FirstNamePreferredUnicode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="LastNamePreferredUnicode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="SearchFactor" Type="Byte" Nullable="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="MiddleNamePreferred" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="MiddleNamePreferredUnicode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="EmergencyName2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EmergencyRelationship2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EmergencyPhone2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EmailHome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ShowEmailHome" Type="Boolean" />
+          <Property Name="ShowBirthday" Type="Boolean" />
+          <Property Name="EmployeeTimestamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="LastSeparationDate" Type="DateTime" Precision="3" />
+          <Property Name="IsOnLeave" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BirthdateDummyYear" Type="DateTime" Precision="3" />
+          <Property Name="OfficeIDAdditional" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ExternalTitle" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="ShowCellPhoneBusinessCard" Type="Boolean" />
+          <Property Name="OfficeID2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ManagerLastRemindedAnniversary" Type="DateTime" Precision="3" />
+          <Property Name="EmployeeSentEmbark2MonthReminder" Type="Boolean" Nullable="false" />
+          <Property Name="ShowAsNewEmployee" Type="Boolean" Nullable="false" />
+          <Property Name="LastHireDateOverride" Type="DateTime" Precision="3" />
+          <Property Name="HoursPerWeek" Type="Single" />
+          <Property Name="TempEntitlement" Type="Byte" />
+          <Property Name="Department" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="LandornetSQLEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="Offices" EntityType="LandornetSQLModel.Office" />
+        </EntityContainer>
+        <EntityType Name="Office">
+          <Key>
+            <PropertyRef Name="OfficeID" />
+          </Key>
+          <Property Name="OfficeID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Office1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ParentOfficeID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Region" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="OfficeCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Address1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Address2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Address3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Address4" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Zip" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MainPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MainFax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OfficeNotes" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="WeatherURL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ActiveFlag" Type="Boolean" Nullable="false" />
+          <Property Name="EmailHost" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="LocationID" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="LocationIDWindows" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="StandardBias" Type="Int16" />
+          <Property Name="CurrencyID" Type="Int16" />
+          <Property Name="FinancialResponsibilityFlag" Type="Boolean" Nullable="false" />
+          <Property Name="IsPhysical" Type="Boolean" Nullable="false" />
+          <Property Name="FTEHours" Type="Single" />
+          <Property Name="CCEnabled" Type="Boolean" />
+          <Property Name="EmployeeCount" Type="Int16" Nullable="false" />
+          <Property Name="OfficeNameShort" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CountryID" Type="Int16" />
+          <Property Name="Domain" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DomainEmail" Type="Boolean" Nullable="false" />
+          <Property Name="DomainFileServers" Type="Boolean" Nullable="false" />
+          <Property Name="LanguageIDDefault" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="IsOracle" Type="Boolean" Nullable="false" />
+          <Property Name="CategoryID" Type="Int32" />
+          <Property Name="MapURLOverride" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="IsArchived" Type="Boolean" Nullable="false" />
+          <Property Name="EmailAddressAll" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UseNewMeetingRooms" Type="Boolean" Nullable="false" />
+          <Property Name="Latitude" Type="Single" />
+          <Property Name="Longitude" Type="Single" />
+          <Property Name="MeetingRoomStartHour" Type="Byte" />
+          <Property Name="MicrositeURL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="MapURL" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="MapURLMobile" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="HRISUpdateEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PIFNewCompanyEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UseOfficeMailingList" Type="Boolean" Nullable="false" />
+          <Property Name="IsNotes" Type="Boolean" Nullable="false" />
+          <Property Name="WebmailURL" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="UsePasswordForm" Type="Boolean" Nullable="false" />
+          <Property Name="SortOrderCC" Type="Byte" />
+          <Property Name="MeetingRoomsFoodJobNumberRequired" Type="Boolean" Nullable="false" />
+          <Property Name="WPPRegion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CoffeeLastBrewed" Type="DateTime" Precision="3" />
+          <Property Name="CoffeeStatus" Type="Byte" />
+          <Property Name="CoffeeLastBrewedByPerson" Type="Int32" />
+          <Property Name="CartesisCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LandorComURL" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="WorkingHoursInDay" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="DefaultEntitlementDays" Type="Byte" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LandornetSQLModelStoreContainer" CdmEntityContainer="LandornetSQLEntities">
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="LandornetSQLModel.Employee">
+              <MappingFragment StoreEntitySet="Employees">
+                <ScalarProperty Name="StaffNumber" ColumnName="StaffNumber" />
+                <ScalarProperty Name="FirstNamePreferred" ColumnName="FirstNamePreferred" />
+                <ScalarProperty Name="LastNamePreferred" ColumnName="LastNamePreferred" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="OfficeID" ColumnName="OfficeID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+                <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
+                <ScalarProperty Name="ActiveStatus" ColumnName="ActiveStatus" />
+                <ScalarProperty Name="EmployeeType" ColumnName="EmployeeType" />
+                <ScalarProperty Name="FinancialResponsibility" ColumnName="FinancialResponsibility" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="TitleCode" ColumnName="TitleCode" />
+                <ScalarProperty Name="LastHireDate" ColumnName="LastHireDate" />
+                <ScalarProperty Name="RecID" ColumnName="RecID" />
+                <ScalarProperty Name="PhotoExists" ColumnName="PhotoExists" />
+                <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+                <ScalarProperty Name="EmergencyName" ColumnName="EmergencyName" />
+                <ScalarProperty Name="EmergencyPhone" ColumnName="EmergencyPhone" />
+                <ScalarProperty Name="YRStaffNumber" ColumnName="YRStaffNumber" />
+                <ScalarProperty Name="StaffNumberSupervisor" ColumnName="StaffNumberSupervisor" />
+                <ScalarProperty Name="CountHRIS" ColumnName="CountHRIS" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="EmailHost" ColumnName="EmailHost" />
+                <ScalarProperty Name="Division" ColumnName="Division" />
+                <ScalarProperty Name="StaffNumberSupervisor2" ColumnName="StaffNumberSupervisor2" />
+                <ScalarProperty Name="IsKnowledgeLeader" ColumnName="IsKnowledgeLeader" />
+                <ScalarProperty Name="IsWiseAss" ColumnName="IsWiseAss" />
+                <ScalarProperty Name="UserNameTemp" ColumnName="UserNameTemp" />
+                <ScalarProperty Name="HomeFax" ColumnName="HomeFax" />
+                <ScalarProperty Name="ShowHomePhone" ColumnName="ShowHomePhone" />
+                <ScalarProperty Name="ShowHomeFax" ColumnName="ShowHomeFax" />
+                <ScalarProperty Name="ShowCellPhone" ColumnName="ShowCellPhone" />
+                <ScalarProperty Name="Address3" ColumnName="Address3" />
+                <ScalarProperty Name="EmergencyRelationship" ColumnName="EmergencyRelationship" />
+                <ScalarProperty Name="SSNumber" ColumnName="SSNumber" />
+                <ScalarProperty Name="FullNameCalc" ColumnName="FullNameCalc" />
+                <ScalarProperty Name="JobClassID" ColumnName="JobClassID" />
+                <ScalarProperty Name="IsKnowledgeFacilitator" ColumnName="IsKnowledgeFacilitator" />
+                <ScalarProperty Name="SearchName" ColumnName="SearchName" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="SearchText" ColumnName="SearchText" />
+                <ScalarProperty Name="FirstNamePreferredUnicode" ColumnName="FirstNamePreferredUnicode" />
+                <ScalarProperty Name="LastNamePreferredUnicode" ColumnName="LastNamePreferredUnicode" />
+                <ScalarProperty Name="SearchFactor" ColumnName="SearchFactor" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="MiddleNamePreferred" ColumnName="MiddleNamePreferred" />
+                <ScalarProperty Name="MiddleNamePreferredUnicode" ColumnName="MiddleNamePreferredUnicode" />
+                <ScalarProperty Name="EmergencyName2" ColumnName="EmergencyName2" />
+                <ScalarProperty Name="EmergencyRelationship2" ColumnName="EmergencyRelationship2" />
+                <ScalarProperty Name="EmergencyPhone2" ColumnName="EmergencyPhone2" />
+                <ScalarProperty Name="EmailHome" ColumnName="EmailHome" />
+                <ScalarProperty Name="ShowEmailHome" ColumnName="ShowEmailHome" />
+                <ScalarProperty Name="ShowBirthday" ColumnName="ShowBirthday" />
+                <ScalarProperty Name="EmployeeTimestamp" ColumnName="EmployeeTimestamp" />
+                <ScalarProperty Name="LastSeparationDate" ColumnName="LastSeparationDate" />
+                <ScalarProperty Name="IsOnLeave" ColumnName="IsOnLeave" />
+                <ScalarProperty Name="BirthdateDummyYear" ColumnName="BirthdateDummyYear" />
+                <ScalarProperty Name="OfficeIDAdditional" ColumnName="OfficeIDAdditional" />
+                <ScalarProperty Name="ExternalTitle" ColumnName="ExternalTitle" />
+                <ScalarProperty Name="ShowCellPhoneBusinessCard" ColumnName="ShowCellPhoneBusinessCard" />
+                <ScalarProperty Name="OfficeID2" ColumnName="OfficeID2" />
+                <ScalarProperty Name="ManagerLastRemindedAnniversary" ColumnName="ManagerLastRemindedAnniversary" />
+                <ScalarProperty Name="EmployeeSentEmbark2MonthReminder" ColumnName="EmployeeSentEmbark2MonthReminder" />
+                <ScalarProperty Name="ShowAsNewEmployee" ColumnName="ShowAsNewEmployee" />
+                <ScalarProperty Name="LastHireDateOverride" ColumnName="LastHireDateOverride" />
+                <ScalarProperty Name="HoursPerWeek" ColumnName="HoursPerWeek" />
+                <ScalarProperty Name="TempEntitlement" ColumnName="TempEntitlement" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Offices">
+            <EntityTypeMapping TypeName="LandornetSQLModel.Office">
+              <MappingFragment StoreEntitySet="Offices">
+                <ScalarProperty Name="DefaultEntitlementDays" ColumnName="DefaultEntitlementDays" />
+                <ScalarProperty Name="WorkingHoursInDay" ColumnName="WorkingHoursInDay" />
+                <ScalarProperty Name="LandorComURL" ColumnName="LandorComURL" />
+                <ScalarProperty Name="CartesisCode" ColumnName="CartesisCode" />
+                <ScalarProperty Name="CoffeeLastBrewedByPerson" ColumnName="CoffeeLastBrewedByPerson" />
+                <ScalarProperty Name="CoffeeStatus" ColumnName="CoffeeStatus" />
+                <ScalarProperty Name="CoffeeLastBrewed" ColumnName="CoffeeLastBrewed" />
+                <ScalarProperty Name="WPPRegion" ColumnName="WPPRegion" />
+                <ScalarProperty Name="MeetingRoomsFoodJobNumberRequired" ColumnName="MeetingRoomsFoodJobNumberRequired" />
+                <ScalarProperty Name="SortOrderCC" ColumnName="SortOrderCC" />
+                <ScalarProperty Name="UsePasswordForm" ColumnName="UsePasswordForm" />
+                <ScalarProperty Name="WebmailURL" ColumnName="WebmailURL" />
+                <ScalarProperty Name="IsNotes" ColumnName="IsNotes" />
+                <ScalarProperty Name="UseOfficeMailingList" ColumnName="UseOfficeMailingList" />
+                <ScalarProperty Name="PIFNewCompanyEmail" ColumnName="PIFNewCompanyEmail" />
+                <ScalarProperty Name="HRISUpdateEmail" ColumnName="HRISUpdateEmail" />
+                <ScalarProperty Name="MapURLMobile" ColumnName="MapURLMobile" />
+                <ScalarProperty Name="MapURL" ColumnName="MapURL" />
+                <ScalarProperty Name="MicrositeURL" ColumnName="MicrositeURL" />
+                <ScalarProperty Name="MeetingRoomStartHour" ColumnName="MeetingRoomStartHour" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="UseNewMeetingRooms" ColumnName="UseNewMeetingRooms" />
+                <ScalarProperty Name="EmailAddressAll" ColumnName="EmailAddressAll" />
+                <ScalarProperty Name="IsArchived" ColumnName="IsArchived" />
+                <ScalarProperty Name="MapURLOverride" ColumnName="MapURLOverride" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="IsOracle" ColumnName="IsOracle" />
+                <ScalarProperty Name="LanguageIDDefault" ColumnName="LanguageIDDefault" />
+                <ScalarProperty Name="DomainFileServers" ColumnName="DomainFileServers" />
+                <ScalarProperty Name="DomainEmail" ColumnName="DomainEmail" />
+                <ScalarProperty Name="Domain" ColumnName="Domain" />
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="OfficeNameShort" ColumnName="OfficeNameShort" />
+                <ScalarProperty Name="EmployeeCount" ColumnName="EmployeeCount" />
+                <ScalarProperty Name="CCEnabled" ColumnName="CCEnabled" />
+                <ScalarProperty Name="FTEHours" ColumnName="FTEHours" />
+                <ScalarProperty Name="IsPhysical" ColumnName="IsPhysical" />
+                <ScalarProperty Name="FinancialResponsibilityFlag" ColumnName="FinancialResponsibilityFlag" />
+                <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+                <ScalarProperty Name="StandardBias" ColumnName="StandardBias" />
+                <ScalarProperty Name="LocationIDWindows" ColumnName="LocationIDWindows" />
+                <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+                <ScalarProperty Name="EmailHost" ColumnName="EmailHost" />
+                <ScalarProperty Name="ActiveFlag" ColumnName="ActiveFlag" />
+                <ScalarProperty Name="WeatherURL" ColumnName="WeatherURL" />
+                <ScalarProperty Name="OfficeNotes" ColumnName="OfficeNotes" />
+                <ScalarProperty Name="MainFax" ColumnName="MainFax" />
+                <ScalarProperty Name="MainPhone" ColumnName="MainPhone" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Address4" ColumnName="Address4" />
+                <ScalarProperty Name="Address3" ColumnName="Address3" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="OfficeCode" ColumnName="OfficeCode" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="ParentOfficeID" ColumnName="ParentOfficeID" />
+                <ScalarProperty Name="Office1" ColumnName="Office" />
+                <ScalarProperty Name="OfficeID" ColumnName="OfficeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

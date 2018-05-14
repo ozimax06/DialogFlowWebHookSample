@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LandornetSQLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="StaffNumber" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FirstNamePreferred" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastNamePreferred" Type="nvarchar" MaxLength="50" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="OfficeID" Type="varchar" MaxLength="20" />
+    <Property Name="Title" Type="varchar" MaxLength="120" />
+    <Property Name="Password" Type="varchar" MaxLength="20" />
+    <Property Name="DepartmentID" Type="varchar" MaxLength="15" />
+    <Property Name="WorkPhone" Type="varchar" MaxLength="80" />
+    <Property Name="ActiveStatus" Type="varchar" MaxLength="20" />
+    <Property Name="EmployeeType" Type="varchar" MaxLength="20" />
+    <Property Name="FinancialResponsibility" Type="varchar" MaxLength="20" />
+    <Property Name="BirthDate" Type="datetime" />
+    <Property Name="TitleCode" Type="varchar" MaxLength="25" />
+    <Property Name="LastHireDate" Type="datetime" />
+    <Property Name="RecID" Type="varchar" MaxLength="10" />
+    <Property Name="PhotoExists" Type="varchar" MaxLength="10" />
+    <Property Name="CellPhone" Type="varchar" MaxLength="80" />
+    <Property Name="Address1" Type="varchar" MaxLength="300" />
+    <Property Name="Address2" Type="varchar" MaxLength="100" />
+    <Property Name="City" Type="varchar" MaxLength="100" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="Zip" Type="varchar" MaxLength="30" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="HomePhone" Type="varchar" MaxLength="80" />
+    <Property Name="EmergencyName" Type="varchar" MaxLength="100" />
+    <Property Name="EmergencyPhone" Type="varchar" MaxLength="80" />
+    <Property Name="YRStaffNumber" Type="varchar" MaxLength="20" />
+    <Property Name="StaffNumberSupervisor" Type="varchar" MaxLength="20" />
+    <Property Name="CountHRIS" Type="smallint" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="EmailHost" Type="varchar" MaxLength="20" />
+    <Property Name="Division" Type="varchar" MaxLength="10" />
+    <Property Name="StaffNumberSupervisor2" Type="varchar" MaxLength="20" />
+    <Property Name="IsKnowledgeLeader" Type="bit" Nullable="false" />
+    <Property Name="IsWiseAss" Type="bit" Nullable="false" />
+    <Property Name="UserNameTemp" Type="varchar" MaxLength="30" />
+    <Property Name="HomeFax" Type="varchar" MaxLength="80" />
+    <Property Name="ShowHomePhone" Type="bit" />
+    <Property Name="ShowHomeFax" Type="bit" />
+    <Property Name="ShowCellPhone" Type="bit" />
+    <Property Name="Address3" Type="varchar" MaxLength="100" />
+    <Property Name="EmergencyRelationship" Type="varchar" MaxLength="80" />
+    <Property Name="SSNumber" Type="varchar" MaxLength="30" />
+    <Property Name="FullNameCalc" Type="nvarchar" MaxLength="101" StoreGeneratedPattern="Computed" />
+    <Property Name="JobClassID" Type="varchar" MaxLength="20" />
+    <Property Name="IsKnowledgeFacilitator" Type="bit" Nullable="false" />
+    <Property Name="SearchName" Type="varchar" MaxLength="200" />
+    <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SearchText" Type="text" />
+    <Property Name="FirstNamePreferredUnicode" Type="nvarchar" MaxLength="60" />
+    <Property Name="LastNamePreferredUnicode" Type="nvarchar" MaxLength="60" />
+    <Property Name="SearchFactor" Type="tinyint" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="60" />
+    <Property Name="MiddleNamePreferred" Type="nvarchar" MaxLength="60" />
+    <Property Name="MiddleNamePreferredUnicode" Type="nvarchar" MaxLength="60" />
+    <Property Name="EmergencyName2" Type="varchar" MaxLength="100" />
+    <Property Name="EmergencyRelationship2" Type="varchar" MaxLength="100" />
+    <Property Name="EmergencyPhone2" Type="varchar" MaxLength="100" />
+    <Property Name="EmailHome" Type="varchar" MaxLength="100" />
+    <Property Name="ShowEmailHome" Type="bit" />
+    <Property Name="ShowBirthday" Type="bit" />
+    <Property Name="EmployeeTimestamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="LastSeparationDate" Type="datetime" />
+    <Property Name="IsOnLeave" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="BirthdateDummyYear" Type="datetime" />
+    <Property Name="OfficeIDAdditional" Type="varchar" MaxLength="20" />
+    <Property Name="ExternalTitle" Type="varchar" MaxLength="120" />
+    <Property Name="ShowCellPhoneBusinessCard" Type="bit" />
+    <Property Name="OfficeID2" Type="varchar" MaxLength="20" />
+    <Property Name="ManagerLastRemindedAnniversary" Type="datetime" />
+    <Property Name="EmployeeSentEmbark2MonthReminder" Type="bit" Nullable="false" />
+    <Property Name="ShowAsNewEmployee" Type="bit" Nullable="false" />
+    <Property Name="LastHireDateOverride" Type="datetime" />
+    <Property Name="HoursPerWeek" Type="real" />
+    <Property Name="TempEntitlement" Type="tinyint" />
+    <Property Name="Department" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Offices">
+    <Key>
+      <PropertyRef Name="OfficeID" />
+    </Key>
+    <Property Name="OfficeID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Office" Type="varchar" MaxLength="50" />
+    <Property Name="ParentOfficeID" Type="varchar" MaxLength="20" />
+    <Property Name="Region" Type="varchar" MaxLength="20" />
+    <Property Name="OfficeCode" Type="varchar" MaxLength="10" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address1" Type="varchar" MaxLength="100" />
+    <Property Name="Address2" Type="varchar" MaxLength="100" />
+    <Property Name="Address3" Type="varchar" MaxLength="100" />
+    <Property Name="Address4" Type="varchar" MaxLength="100" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="Zip" Type="varchar" MaxLength="20" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="MainPhone" Type="varchar" MaxLength="50" />
+    <Property Name="MainFax" Type="varchar" MaxLength="50" />
+    <Property Name="OfficeNotes" Type="varchar" MaxLength="1000" />
+    <Property Name="WeatherURL" Type="varchar" MaxLength="200" />
+    <Property Name="ActiveFlag" Type="bit" Nullable="false" />
+    <Property Name="EmailHost" Type="varchar" MaxLength="20" />
+    <Property Name="LocationID" Type="varchar" MaxLength="12" />
+    <Property Name="LocationIDWindows" Type="varchar" MaxLength="50" />
+    <Property Name="StandardBias" Type="smallint" />
+    <Property Name="CurrencyID" Type="smallint" />
+    <Property Name="FinancialResponsibilityFlag" Type="bit" Nullable="false" />
+    <Property Name="IsPhysical" Type="bit" Nullable="false" />
+    <Property Name="FTEHours" Type="real" />
+    <Property Name="CCEnabled" Type="bit" />
+    <Property Name="EmployeeCount" Type="smallint" Nullable="false" />
+    <Property Name="OfficeNameShort" Type="varchar" MaxLength="20" />
+    <Property Name="CountryID" Type="smallint" />
+    <Property Name="Domain" Type="varchar" MaxLength="20" />
+    <Property Name="DomainEmail" Type="bit" Nullable="false" />
+    <Property Name="DomainFileServers" Type="bit" Nullable="false" />
+    <Property Name="LanguageIDDefault" Type="varchar" MaxLength="10" />
+    <Property Name="IsOracle" Type="bit" Nullable="false" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="MapURLOverride" Type="varchar" MaxLength="300" />
+    <Property Name="IsArchived" Type="bit" Nullable="false" />
+    <Property Name="EmailAddressAll" Type="varchar" MaxLength="50" />
+    <Property Name="UseNewMeetingRooms" Type="bit" Nullable="false" />
+    <Property Name="Latitude" Type="real" />
+    <Property Name="Longitude" Type="real" />
+    <Property Name="MeetingRoomStartHour" Type="tinyint" />
+    <Property Name="MicrositeURL" Type="varchar" MaxLength="100" />
+    <Property Name="MapURL" Type="varchar" MaxLength="300" />
+    <Property Name="MapURLMobile" Type="varchar" MaxLength="300" />
+    <Property Name="HRISUpdateEmail" Type="varchar" MaxLength="100" />
+    <Property Name="PIFNewCompanyEmail" Type="varchar" MaxLength="50" />
+    <Property Name="UseOfficeMailingList" Type="bit" Nullable="false" />
+    <Property Name="IsNotes" Type="bit" Nullable="false" />
+    <Property Name="WebmailURL" Type="varchar" MaxLength="300" />
+    <Property Name="UsePasswordForm" Type="bit" Nullable="false" />
+    <Property Name="SortOrderCC" Type="tinyint" />
+    <Property Name="MeetingRoomsFoodJobNumberRequired" Type="bit" Nullable="false" />
+    <Property Name="WPPRegion" Type="varchar" MaxLength="50" />
+    <Property Name="CoffeeLastBrewed" Type="datetime" />
+    <Property Name="CoffeeStatus" Type="tinyint" />
+    <Property Name="CoffeeLastBrewedByPerson" Type="int" />
+    <Property Name="CartesisCode" Type="varchar" MaxLength="50" />
+    <Property Name="LandorComURL" Type="varchar" MaxLength="255" />
+    <Property Name="WorkingHoursInDay" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="DefaultEntitlementDays" Type="tinyint" />
+  </EntityType>
+  <EntityContainer Name="LandornetSQLModelStoreContainer">
+    <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Offices" EntityType="Self.Offices" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

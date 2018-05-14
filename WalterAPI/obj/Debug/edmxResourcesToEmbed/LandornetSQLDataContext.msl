@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LandornetSQLModelStoreContainer" CdmEntityContainer="LandornetSQLEntities">
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="LandornetSQLModel.Employee">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="StaffNumber" ColumnName="StaffNumber" />
+          <ScalarProperty Name="FirstNamePreferred" ColumnName="FirstNamePreferred" />
+          <ScalarProperty Name="LastNamePreferred" ColumnName="LastNamePreferred" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="OfficeID" ColumnName="OfficeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
+          <ScalarProperty Name="ActiveStatus" ColumnName="ActiveStatus" />
+          <ScalarProperty Name="EmployeeType" ColumnName="EmployeeType" />
+          <ScalarProperty Name="FinancialResponsibility" ColumnName="FinancialResponsibility" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="TitleCode" ColumnName="TitleCode" />
+          <ScalarProperty Name="LastHireDate" ColumnName="LastHireDate" />
+          <ScalarProperty Name="RecID" ColumnName="RecID" />
+          <ScalarProperty Name="PhotoExists" ColumnName="PhotoExists" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="EmergencyName" ColumnName="EmergencyName" />
+          <ScalarProperty Name="EmergencyPhone" ColumnName="EmergencyPhone" />
+          <ScalarProperty Name="YRStaffNumber" ColumnName="YRStaffNumber" />
+          <ScalarProperty Name="StaffNumberSupervisor" ColumnName="StaffNumberSupervisor" />
+          <ScalarProperty Name="CountHRIS" ColumnName="CountHRIS" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailHost" ColumnName="EmailHost" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="StaffNumberSupervisor2" ColumnName="StaffNumberSupervisor2" />
+          <ScalarProperty Name="IsKnowledgeLeader" ColumnName="IsKnowledgeLeader" />
+          <ScalarProperty Name="IsWiseAss" ColumnName="IsWiseAss" />
+          <ScalarProperty Name="UserNameTemp" ColumnName="UserNameTemp" />
+          <ScalarProperty Name="HomeFax" ColumnName="HomeFax" />
+          <ScalarProperty Name="ShowHomePhone" ColumnName="ShowHomePhone" />
+          <ScalarProperty Name="ShowHomeFax" ColumnName="ShowHomeFax" />
+          <ScalarProperty Name="ShowCellPhone" ColumnName="ShowCellPhone" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="EmergencyRelationship" ColumnName="EmergencyRelationship" />
+          <ScalarProperty Name="SSNumber" ColumnName="SSNumber" />
+          <ScalarProperty Name="FullNameCalc" ColumnName="FullNameCalc" />
+          <ScalarProperty Name="JobClassID" ColumnName="JobClassID" />
+          <ScalarProperty Name="IsKnowledgeFacilitator" ColumnName="IsKnowledgeFacilitator" />
+          <ScalarProperty Name="SearchName" ColumnName="SearchName" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="SearchText" ColumnName="SearchText" />
+          <ScalarProperty Name="FirstNamePreferredUnicode" ColumnName="FirstNamePreferredUnicode" />
+          <ScalarProperty Name="LastNamePreferredUnicode" ColumnName="LastNamePreferredUnicode" />
+          <ScalarProperty Name="SearchFactor" ColumnName="SearchFactor" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="MiddleNamePreferred" ColumnName="MiddleNamePreferred" />
+          <ScalarProperty Name="MiddleNamePreferredUnicode" ColumnName="MiddleNamePreferredUnicode" />
+          <ScalarProperty Name="EmergencyName2" ColumnName="EmergencyName2" />
+          <ScalarProperty Name="EmergencyRelationship2" ColumnName="EmergencyRelationship2" />
+          <ScalarProperty Name="EmergencyPhone2" ColumnName="EmergencyPhone2" />
+          <ScalarProperty Name="EmailHome" ColumnName="EmailHome" />
+          <ScalarProperty Name="ShowEmailHome" ColumnName="ShowEmailHome" />
+          <ScalarProperty Name="ShowBirthday" ColumnName="ShowBirthday" />
+          <ScalarProperty Name="EmployeeTimestamp" ColumnName="EmployeeTimestamp" />
+          <ScalarProperty Name="LastSeparationDate" ColumnName="LastSeparationDate" />
+          <ScalarProperty Name="IsOnLeave" ColumnName="IsOnLeave" />
+          <ScalarProperty Name="BirthdateDummyYear" ColumnName="BirthdateDummyYear" />
+          <ScalarProperty Name="OfficeIDAdditional" ColumnName="OfficeIDAdditional" />
+          <ScalarProperty Name="ExternalTitle" ColumnName="ExternalTitle" />
+          <ScalarProperty Name="ShowCellPhoneBusinessCard" ColumnName="ShowCellPhoneBusinessCard" />
+          <ScalarProperty Name="OfficeID2" ColumnName="OfficeID2" />
+          <ScalarProperty Name="ManagerLastRemindedAnniversary" ColumnName="ManagerLastRemindedAnniversary" />
+          <ScalarProperty Name="EmployeeSentEmbark2MonthReminder" ColumnName="EmployeeSentEmbark2MonthReminder" />
+          <ScalarProperty Name="ShowAsNewEmployee" ColumnName="ShowAsNewEmployee" />
+          <ScalarProperty Name="LastHireDateOverride" ColumnName="LastHireDateOverride" />
+          <ScalarProperty Name="HoursPerWeek" ColumnName="HoursPerWeek" />
+          <ScalarProperty Name="TempEntitlement" ColumnName="TempEntitlement" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Offices">
+      <EntityTypeMapping TypeName="LandornetSQLModel.Office">
+        <MappingFragment StoreEntitySet="Offices">
+          <ScalarProperty Name="DefaultEntitlementDays" ColumnName="DefaultEntitlementDays" />
+          <ScalarProperty Name="WorkingHoursInDay" ColumnName="WorkingHoursInDay" />
+          <ScalarProperty Name="LandorComURL" ColumnName="LandorComURL" />
+          <ScalarProperty Name="CartesisCode" ColumnName="CartesisCode" />
+          <ScalarProperty Name="CoffeeLastBrewedByPerson" ColumnName="CoffeeLastBrewedByPerson" />
+          <ScalarProperty Name="CoffeeStatus" ColumnName="CoffeeStatus" />
+          <ScalarProperty Name="CoffeeLastBrewed" ColumnName="CoffeeLastBrewed" />
+          <ScalarProperty Name="WPPRegion" ColumnName="WPPRegion" />
+          <ScalarProperty Name="MeetingRoomsFoodJobNumberRequired" ColumnName="MeetingRoomsFoodJobNumberRequired" />
+          <ScalarProperty Name="SortOrderCC" ColumnName="SortOrderCC" />
+          <ScalarProperty Name="UsePasswordForm" ColumnName="UsePasswordForm" />
+          <ScalarProperty Name="WebmailURL" ColumnName="WebmailURL" />
+          <ScalarProperty Name="IsNotes" ColumnName="IsNotes" />
+          <ScalarProperty Name="UseOfficeMailingList" ColumnName="UseOfficeMailingList" />
+          <ScalarProperty Name="PIFNewCompanyEmail" ColumnName="PIFNewCompanyEmail" />
+          <ScalarProperty Name="HRISUpdateEmail" ColumnName="HRISUpdateEmail" />
+          <ScalarProperty Name="MapURLMobile" ColumnName="MapURLMobile" />
+          <ScalarProperty Name="MapURL" ColumnName="MapURL" />
+          <ScalarProperty Name="MicrositeURL" ColumnName="MicrositeURL" />
+          <ScalarProperty Name="MeetingRoomStartHour" ColumnName="MeetingRoomStartHour" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="UseNewMeetingRooms" ColumnName="UseNewMeetingRooms" />
+          <ScalarProperty Name="EmailAddressAll" ColumnName="EmailAddressAll" />
+          <ScalarProperty Name="IsArchived" ColumnName="IsArchived" />
+          <ScalarProperty Name="MapURLOverride" ColumnName="MapURLOverride" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="IsOracle" ColumnName="IsOracle" />
+          <ScalarProperty Name="LanguageIDDefault" ColumnName="LanguageIDDefault" />
+          <ScalarProperty Name="DomainFileServers" ColumnName="DomainFileServers" />
+          <ScalarProperty Name="DomainEmail" ColumnName="DomainEmail" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="OfficeNameShort" ColumnName="OfficeNameShort" />
+          <ScalarProperty Name="EmployeeCount" ColumnName="EmployeeCount" />
+          <ScalarProperty Name="CCEnabled" ColumnName="CCEnabled" />
+          <ScalarProperty Name="FTEHours" ColumnName="FTEHours" />
+          <ScalarProperty Name="IsPhysical" ColumnName="IsPhysical" />
+          <ScalarProperty Name="FinancialResponsibilityFlag" ColumnName="FinancialResponsibilityFlag" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="StandardBias" ColumnName="StandardBias" />
+          <ScalarProperty Name="LocationIDWindows" ColumnName="LocationIDWindows" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="EmailHost" ColumnName="EmailHost" />
+          <ScalarProperty Name="ActiveFlag" ColumnName="ActiveFlag" />
+          <ScalarProperty Name="WeatherURL" ColumnName="WeatherURL" />
+          <ScalarProperty Name="OfficeNotes" ColumnName="OfficeNotes" />
+          <ScalarProperty Name="MainFax" ColumnName="MainFax" />
+          <ScalarProperty Name="MainPhone" ColumnName="MainPhone" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address4" ColumnName="Address4" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="OfficeCode" ColumnName="OfficeCode" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="ParentOfficeID" ColumnName="ParentOfficeID" />
+          <ScalarProperty Name="Office1" ColumnName="Office" />
+          <ScalarProperty Name="OfficeID" ColumnName="OfficeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

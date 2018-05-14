@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LandornetSQLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="StaffNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FirstNamePreferred" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastNamePreferred" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OfficeID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DepartmentID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="WorkPhone" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="ActiveStatus" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeeType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FinancialResponsibility" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BirthDate" Type="DateTime" Precision="3" />
+    <Property Name="TitleCode" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="LastHireDate" Type="DateTime" Precision="3" />
+    <Property Name="RecID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PhotoExists" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CellPhone" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Address1" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Address2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Zip" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HomePhone" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="EmergencyName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EmergencyPhone" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="YRStaffNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="StaffNumberSupervisor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CountHRIS" Type="Int16" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EmailHost" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Division" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="StaffNumberSupervisor2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IsKnowledgeLeader" Type="Boolean" Nullable="false" />
+    <Property Name="IsWiseAss" Type="Boolean" Nullable="false" />
+    <Property Name="UserNameTemp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="HomeFax" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="ShowHomePhone" Type="Boolean" />
+    <Property Name="ShowHomeFax" Type="Boolean" />
+    <Property Name="ShowCellPhone" Type="Boolean" />
+    <Property Name="Address3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EmergencyRelationship" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="SSNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FullNameCalc" Type="String" MaxLength="101" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="JobClassID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IsKnowledgeFacilitator" Type="Boolean" Nullable="false" />
+    <Property Name="SearchName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SearchText" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FirstNamePreferredUnicode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="LastNamePreferredUnicode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="SearchFactor" Type="Byte" Nullable="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleNamePreferred" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleNamePreferredUnicode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="EmergencyName2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EmergencyRelationship2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EmergencyPhone2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EmailHome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ShowEmailHome" Type="Boolean" />
+    <Property Name="ShowBirthday" Type="Boolean" />
+    <Property Name="EmployeeTimestamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="LastSeparationDate" Type="DateTime" Precision="3" />
+    <Property Name="IsOnLeave" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BirthdateDummyYear" Type="DateTime" Precision="3" />
+    <Property Name="OfficeIDAdditional" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ExternalTitle" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="ShowCellPhoneBusinessCard" Type="Boolean" />
+    <Property Name="OfficeID2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ManagerLastRemindedAnniversary" Type="DateTime" Precision="3" />
+    <Property Name="EmployeeSentEmbark2MonthReminder" Type="Boolean" Nullable="false" />
+    <Property Name="ShowAsNewEmployee" Type="Boolean" Nullable="false" />
+    <Property Name="LastHireDateOverride" Type="DateTime" Precision="3" />
+    <Property Name="HoursPerWeek" Type="Single" />
+    <Property Name="TempEntitlement" Type="Byte" />
+    <Property Name="Department" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="LandornetSQLEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="Offices" EntityType="LandornetSQLModel.Office" />
+  </EntityContainer>
+  <EntityType Name="Office">
+    <Key>
+      <PropertyRef Name="OfficeID" />
+    </Key>
+    <Property Name="OfficeID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Office1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ParentOfficeID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="OfficeCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Address2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Address3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Address4" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Zip" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MainPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MainFax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OfficeNotes" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="WeatherURL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ActiveFlag" Type="Boolean" Nullable="false" />
+    <Property Name="EmailHost" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LocationID" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="LocationIDWindows" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="StandardBias" Type="Int16" />
+    <Property Name="CurrencyID" Type="Int16" />
+    <Property Name="FinancialResponsibilityFlag" Type="Boolean" Nullable="false" />
+    <Property Name="IsPhysical" Type="Boolean" Nullable="false" />
+    <Property Name="FTEHours" Type="Single" />
+    <Property Name="CCEnabled" Type="Boolean" />
+    <Property Name="EmployeeCount" Type="Int16" Nullable="false" />
+    <Property Name="OfficeNameShort" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CountryID" Type="Int16" />
+    <Property Name="Domain" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DomainEmail" Type="Boolean" Nullable="false" />
+    <Property Name="DomainFileServers" Type="Boolean" Nullable="false" />
+    <Property Name="LanguageIDDefault" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IsOracle" Type="Boolean" Nullable="false" />
+    <Property Name="CategoryID" Type="Int32" />
+    <Property Name="MapURLOverride" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="IsArchived" Type="Boolean" Nullable="false" />
+    <Property Name="EmailAddressAll" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UseNewMeetingRooms" Type="Boolean" Nullable="false" />
+    <Property Name="Latitude" Type="Single" />
+    <Property Name="Longitude" Type="Single" />
+    <Property Name="MeetingRoomStartHour" Type="Byte" />
+    <Property Name="MicrositeURL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MapURL" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="MapURLMobile" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="HRISUpdateEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PIFNewCompanyEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UseOfficeMailingList" Type="Boolean" Nullable="false" />
+    <Property Name="IsNotes" Type="Boolean" Nullable="false" />
+    <Property Name="WebmailURL" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="UsePasswordForm" Type="Boolean" Nullable="false" />
+    <Property Name="SortOrderCC" Type="Byte" />
+    <Property Name="MeetingRoomsFoodJobNumberRequired" Type="Boolean" Nullable="false" />
+    <Property Name="WPPRegion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CoffeeLastBrewed" Type="DateTime" Precision="3" />
+    <Property Name="CoffeeStatus" Type="Byte" />
+    <Property Name="CoffeeLastBrewedByPerson" Type="Int32" />
+    <Property Name="CartesisCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LandorComURL" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="WorkingHoursInDay" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="DefaultEntitlementDays" Type="Byte" />
+  </EntityType>
+</Schema>
